@@ -3,6 +3,7 @@
 /* COLOR GREEN */
 /* tints */
 /* #008000 */
+/* #04aa6d */
 
 /* #d60000 */
 
@@ -96,7 +97,7 @@ body {
 .btn {
   display: inline-block;
   padding: 1rem 2.8rem;
-  background: #008000;
+  background: #04aa6d;
   border-radius: 5px;
 
   font-size: 1.6rem;
