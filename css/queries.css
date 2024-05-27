@@ -340,3 +340,98 @@
     font-size: 1.8rem;
   }
 }
+/* BELOW 375px (phones) ///////////////*/
+@media (max-width: 23.44em) {
+  .sub-header-container {
+    gap: 0.95rem;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .dropbtn {
+    font-size: 1.2rem;
+
+    padding: 1rem 3rem;
+  }
+
+  .dropdown-content {
+    min-width: 9rem;
+  }
+
+  .dropdown-content a {
+    padding: 1.2rem 1.98rem;
+
+    text-align: center;
+  }
+  .sub-icon {
+    width: 1.8rem;
+    height: 1.8rem;
+  }
+  .overlay-text {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+
+  .overlay-text h1 {
+    font-size: 8rem;
+    font-weight: 700;
+    margin-bottom: 6rem;
+  }
+  .overlay-text p {
+    line-height: 1.1;
+    font-size: 3rem;
+  }
+  .video-container {
+    height: 100vh;
+  }
+
+  .video-text {
+    max-width: 40rem;
+
+    margin-bottom: 2.4rem;
+    font-size: 1.6rem;
+    line-height: 1.1;
+  }
+  .video-banner {
+    margin-left: 4rem;
+    margin-right: 4rem;
+  }
+  .card {
+    height: 40vh;
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 6rem;
+  }
+  .main {
+    margin: 0 auto;
+  }
+  .main p {
+    max-width: 70%;
+  }
+  .main-text {
+    margin-left: 4rem;
+  }
+  .skill {
+    margin: 0 auto;
+    margin-bottom: 6rem;
+  }
+  .skill h2 {
+    font-size: 4rem;
+  }
+  .youtube-gal-two {
+    grid-template-columns: 1fr;
+    padding-left: 0;
+  }
+  .two,
+  .three,
+  .four,
+  .five,
+  .six,
+  .seven {
+    width: 100%;
+    height: auto;
+  }
+  .youtube-gallery img {
+    width: 40rem;
+  }
+}

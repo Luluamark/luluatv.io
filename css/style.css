@@ -15,7 +15,20 @@
   height: auto;
   background-color: #fefefe;
   padding: 1rem 2rem;
+  z-index: 1;
 }
+.header::before {
+  content: "";
+  position: absolute;
+  background-color: red;
+  top: 20%;
+  left: 8%;
+  width: 4rem;
+  height: 4rem;
+  border-top-left-radius: 0.98rem;
+  border-bottom-right-radius: 0.98rem;
+}
+
 .nav-list {
   list-style: none;
   display: flex;
@@ -270,7 +283,7 @@
   width: 5rem;
   height: 0.25rem;
   margin-bottom: 2rem;
-  background: var(--clr-primary-5);
+  background: red;
   margin-left: auto;
   margin-right: auto;
 }
@@ -422,14 +435,6 @@
 .visible {
   opacity: 1;
 }
-/* .content-1 {
-  animation: fade-in-out 6s ease-in-out infinite;
-  animation-delay: 6s;
-}
-.content-2 {
-  animation: fade-in-out 6s ease-in-out infinite;
-  animation-delay: 0s;
-} */
 
 @keyframes fade-in-out {
   0% {
