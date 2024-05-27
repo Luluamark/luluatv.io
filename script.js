@@ -1,5 +1,14 @@
 "use strict";
 
+/////////////////////////////////////////////////////Show and hide the nav
+const mobileBtn = document.querySelector(".btn-mobile-nav");
+
+const headerEl = document.querySelector(".header");
+
+mobileBtn.addEventListener("click", function () {
+  headerEl.classList.toggle("nav-open");
+});
+
 //////////////////////////////////////////////////// Horizontal video scroll infinite
 const scrollers = document.querySelectorAll(".youtube-videos");
 
@@ -50,20 +59,22 @@ contents.forEach((content) => {
 
 animateContents();
 
-// const contents = document.querySelectorAll(".slide-in-content");
+////////////////////////////////////////////////Fixinf flexbox gap proptery missing in some safari versions
 
-// let index = 0;
+function checkFlexGap() {
+  let flex = document.createElement("div");
+  flex.style.display = "flex";
+  flex.style.flexDirection = "column";
+  flex.style.rowGap = "1px";
 
-// setInterval(() => {
-//   contents[index].classList.add("visible");
+  flex.appendChild(document.createElement("div"));
+  flex.appendChild(document.createElement("div"));
 
-//   setTimeout(() => {
-//     contents[index].classList.remove("visible");
-//   }, 3500);
+  document.body.appendChild(flex);
+  let isSupported = flex.scrollHeight === 1;
+  flex.parentNode.removeChild(flex);
+  console.log(isSupported);
 
-//   index++;
-
-//   if (index >= contents.length) {
-//     index = 0;
-//   }
-// }, 3000);
+  if (!isSupported) document.body.classList.add("no-flexbox-gap");
+}
+checkFlexGap();

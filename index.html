@@ -20,14 +20,11 @@
     <title>Lulua-TV.io</title>
   </head>
   <body>
-    <header class="header">
-      <nav class="nav">
-        <img class="nav-log" src="./Main-logo-01.png" />
+    <header class="header nav-open">
+      <img class="nav-log" src="./Main-logo-01.png" />
 
+      <nav class="nav">
         <ul class="nav-list">
-          <li>
-            <a class="nav-link" href="#">Home</a>
-          </li>
           <li>
             <a class="nav-link" href="#">YouTube</a>
           </li>
@@ -52,48 +49,63 @@
         </ul>
       </nav>
 
-      <div class="sub-header">
-        <div class="sub-header-container container">
+      <button class="btn-mobile-nav">
+        <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+
+        <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+      </button>
+    </header>
+    <!-- Second Nav /////////////////////////////////////////////////////////// -->
+    <section>
+      <div class="sub-header container">
+        <div class="sub-header-container">
           <div class="sub-header-text">
-            <h2><ion-icon name="call-outline"></ion-icon></h2>
-            <p>0785300477</p>
+            <div class="sub-col">
+              <ion-icon class="sub-icon" name="call-outline"></ion-icon>
+              <p>0785300477</p>
+            </div>
           </div>
 
           <div class="sub-header-text">
-            <h2><ion-icon name="mail-outline"></ion-icon></h2>
-            <p>luluatv90@gmail.com</p>
+            <div class="sub-col">
+              <ion-icon class="sub-icon" name="mail-outline"></ion-icon>
+
+              <p>luluatv90@gmail.com</p>
+            </div>
           </div>
 
           <div class="sub-header-text">
-            <h2><ion-icon name="link-outline"></ion-icon></h2>
+            <div class="sub-col">
+              <ion-icon name="link-outline"></ion-icon>
 
-            <div class="dropdown">
-              <button class="dropbtn">Social Media Handles</button>
+              <div class="dropdown">
+                <button class="dropbtn">Social Media Handles</button>
 
-              <div class="dropdown-content">
-                <a
-                  href="https://youtube.com/@LuluaTV90?si=FrpaLT0TnpaBgnbO"
-                  target="_blank"
-                  >YouTube</a
-                >
-                <a href="https://twitter.com/home" target="_blank"
-                  >Twitter(X)</a
-                >
-                <a href="https://www.facebook.com/luluamark90" target="_blank"
-                  >Facebook</a
-                >
-                <a href="https://www.tiktok.com/@luluatv" target="_blank"
-                  >TikTok</a
-                >
-                <a href="https://www.instagram.com/luluat.v/" target="_blank"
-                  >Instagrm</a
-                >
+                <div class="dropdown-content">
+                  <a
+                    href="https://youtube.com/@LuluaTV90?si=FrpaLT0TnpaBgnbO"
+                    target="_blank"
+                    >YouTube</a
+                  >
+                  <a href="https://twitter.com/home" target="_blank"
+                    >Twitter(X)</a
+                  >
+                  <a href="https://www.facebook.com/luluamark90" target="_blank"
+                    >Facebook</a
+                  >
+                  <a href="https://www.tiktok.com/@luluatv" target="_blank"
+                    >TikTok</a
+                  >
+                  <a href="https://www.instagram.com/luluat.v/" target="_blank"
+                    >Instagrm</a
+                  >
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </header>
+    </section>
     <!-- end of header nav /////////////////////////////////////////////////////////////////////////////////////////// -->
 
     <main>
@@ -156,7 +168,7 @@
     <section class="section blog">
       <div class="container">
         <div class="section-title blog-title">
-          <h2 class="info-title">BLOG SITE</h2>
+          <h2 class="info-title heading-secondary">BLOG SITE</h2>
           <div class="underline"></div>
         </div>
 
@@ -248,7 +260,7 @@
     <section class="main slide-in">
       <div class="grid grid-2-cols slide-in-content content-1">
         <div class="main-text">
-          <h2>My Story</h2>
+          <h2 class="heading-secondary">My Story</h2>
           <p>
             I started social media blogging/vlogging way back around 2015,
             without clear idea of what i will become in future, i guess it was
@@ -268,7 +280,7 @@
       <!-- /// -->
       <div class="grid grid-2-cols slide-in-content content-2">
         <div class="main-text">
-          <h2>My Passion</h2>
+          <h2 class="heading-secondary">My Passion</h2>
           <p>
             I started social media blogging/vlogging way back around 2015,
             without clear idea of what i will become in future, i guess it was
@@ -288,7 +300,7 @@
       <!-- /// -->
       <div class="grid grid-2-cols slide-in-content content-3">
         <div class="main-text">
-          <h2>My Motivation</h2>
+          <h2 class="heading-secondary">My Motivation</h2>
           <p>
             I started social media blogging/vlogging way back around 2015,
             without clear idea of what i will become in future, i guess it was
@@ -473,7 +485,7 @@
     <!-- Skill section//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
     <section class="skill">
       <div>
-        <h2>My Coding Skills</h2>
+        <h2 class="heading-primary">My Coding Skills</h2>
       </div>
       <div class="grid grid-2-cols">
         <div>
@@ -484,21 +496,27 @@
             <p>
               <ion-icon class="html-icon" name="logo-html5"></ion-icon>
             </p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto
-              alias accusamus tenetur temporibus atque rerum fuga obcaecati
-            </p>
+            <p>HTML</p>
+            <p>85%</p>
+
+            <div class="bar">
+              <span class="html"></span>
+            </div>
           </div>
 
+          <!-- skill-2 -->
           <div>
             <p>
               <ion-icon class="css-icon" name="logo-css3"></ion-icon>
             </p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto
-              alias accusamus tenetur temporibus atque rerum fuga obcaecati
-            </p>
+            <p>CSS</p>
+            <p>70%</p>
+
+            <div class="bar">
+              <span class="css"></span>
+            </div>
           </div>
+          <!-- skill-3 -->
           <div>
             <p>
               <ion-icon
@@ -506,27 +524,61 @@
                 name="logo-javascript"
               ></ion-icon>
             </p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto
-              alias accusamus tenetur temporibus atque rerum fuga obcaecati
-            </p>
+            <p>JAVA SCRIPT</p>
+            <p>50%</p>
+
+            <div class="bar">
+              <span class="javascript"></span>
+            </div>
           </div>
+          <!-- skill-4 -->
+          <div>
+            <p>
+              <ion-icon class="photoshop-icon" name="camera-outline"></ion-icon>
+            </p>
+            <p>PHOTOSHOP</p>
+            <p>95%</p>
+
+            <div class="bar">
+              <span class="photoshop"></span>
+            </div>
+          </div>
+          <!-- skill-5 -->
+          <div>
+            <p>
+              <ion-icon
+                class="illustrator-icon"
+                name="desktop-outline"
+              ></ion-icon>
+            </p>
+            <p>Illustrator</p>
+            <p>95%</p>
+
+            <div class="bar">
+              <span class="illustrator"></span>
+            </div>
+          </div>
+
+          <!-- skill-6 -->
           <div>
             <p>
               <ion-icon class="react-icon" name="logo-react"></ion-icon>
             </p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto
-              alias accusamus tenetur temporibus atque rerum fuga obcaecati
-            </p>
+            <p>REACT</p>
+            <p>30%</p>
+
+            <div class="bar">
+              <span class="react"></span>
+            </div>
           </div>
         </div>
       </div>
     </section>
     <!-- youtube section//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
     <section class="youtube-gallery">
+      <h2 class="heading-secondary">YouTube Gallery</h2>
       <div class="grid grid-2-cols container">
-        <div>
+        <div class="youtube-img">
           <img
             src="./images/phone Invisible iPhone Case - Blue _ iPhone 12 Pro.jpg"
             alt=""
@@ -606,10 +658,11 @@
         </div>
       </div>
     </section>
+    <!-- social section////////////////////////////////////////////////////// -->
     <section class="socials">
       <div class="social-link grid grid-2-cols container">
         <div class="social-text">
-          <h2>
+          <h2 class="heading-secondary">
             Hello welcome to Lulua TV's <br />
             world of creativity
           </h2>
@@ -637,10 +690,10 @@
     <section class="section-cta container">
       <div class="contact-banner">
         <div class="contact-title">
-          <h2>Get in touch</h2>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus
-            perferendis atque iure alias ab quibusdam!
+          <h2 class="heading-secondary">Get in touch</h2>
+          <p class="cta-text">
+            I will appreciate your feedback about the works i have done, i also
+            do graphics design, flyers, logos, reciepts and many more.
           </p>
         </div>
         <!-- /// -->
@@ -649,10 +702,7 @@
             <ion-icon class="call-outline" name="call-outline"></ion-icon>
 
             <h3>0785300477</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa,
-              unde!
-            </p>
+            <p>Contact us to recieve all the services i have mentioned above</p>
 
             <button class="cta-btn btn">Text Us</button>
           </div>
@@ -663,10 +713,7 @@
             <ion-icon class="mail-outline" name="mail-outline"></ion-icon>
 
             <h3>luluamarkm@gmail.com</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa,
-              unde!
-            </p>
+            <p>Contact us to recieve all the services i have mentioned above</p>
 
             <button class="cta-btn btn">Email Us</button>
           </div>
@@ -682,7 +729,9 @@
 
     <footer>
       <div class="footer-section">
-        <div class="footer-header"></div>
+        <div class="footer-header">
+          <h2 class="heading-secondary">Find Our Resourses</h2>
+        </div>
 
         <div>
           <ul class="footer-list">
@@ -691,41 +740,136 @@
                 ><img src="./Main-logo-01.png" alt="lulua tv logo"
               /></a>
             </li>
+            <li class="sub-heading">Social Media</li>
+            <li class="sub-heading">My Resourses</li>
+
+            <li class="sub-heading">My Resourses</li>
+            <li class="sub-heading">My Resourses</li>
             <li>
-              <a class="footer-link" href="#"> Skill</a>
-            </li>
-            <li>
-              <a class="footer-link" href="#"> My Story</a>
+              <a
+                class="footer-link whatsapp"
+                href="whatsapp://send?phone=+256785300477"
+                target="_blank"
+              >
+                0785300477</a
+              >
             </li>
 
             <li>
-              <a class="footer-link" href="#"> Videos</a>
+              <a
+                class="footer-link"
+                href="https://youtube.com/@LuluaTV90?si=FrpaLT0TnpaBgnbO"
+                target="_blank"
+                >YouTube</a
+              >
             </li>
             <li>
-              <a class="footer-link" href="#"> Gallery</a>
+              <a
+                class="footer-link"
+                href="https://www.netlify.com/"
+                target="_blank"
+                >Netlify</a
+              >
             </li>
             <li>
-              <a class="footer-link" href="#"> Inspirations</a>
+              <a
+                class="footer-link"
+                href="https://www.pexels.com/"
+                target="_blank"
+                >Pexels</a
+              >
             </li>
 
             <li>
-              <a class="footer-link" href="#"> Lesson Link</a>
+              <a
+                class="footer-link"
+                href="https://fonts.google.com/"
+                target="_blank"
+              >
+                Google fonts</a
+              >
             </li>
             <li>
-              <a class="footer-link" href="#"> Resourses</a>
-            </li>
-            <li>
-              <a class="footer-link" href="#"> Contact</a>
+              <a
+                class="footer-link"
+                href="https://www.tiktok.com/@luluatv"
+                target="_blank"
+              >
+                TikTok</a
+              >
             </li>
 
             <li>
-              <a class="footer-link" href="#"> Socials</a>
+              <a
+                class="footer-link"
+                href="https://twitter.com/home"
+                target="_blank"
+                >Twitter</a
+              >
             </li>
             <li>
-              <a class="footer-link" href="#"> Projects</a>
+              <a
+                class="footer-link"
+                href="https://www.w3schools.com/"
+                target="_blank"
+              >
+                w3schools</a
+              >
             </li>
             <li>
-              <a class="footer-link" href="#"> Netlify</a>
+              <a
+                class="footer-link"
+                href="https://developer.mozilla.org/en-US/"
+                target="_blank"
+                >MDN web</a
+              >
+            </li>
+
+            <li>
+              <a
+                class="footer-link"
+                href="https://ionic.io/ionicons"
+                target="_blank"
+                >ionicons</a
+              >
+            </li>
+
+            <li>
+              <a
+                class="footer-link"
+                href="https://www.instagram.com/luluat.v/"
+                target="_blank"
+                >Instagrm</a
+              >
+            </li>
+            <li>
+              <a
+                class="footer-link"
+                href="https://www.facebook.com/luluamark90"
+                target="_blank"
+                >Facebook</a
+              >
+            </li>
+            <li>
+              <a class="footer-link" href="https://github.com/" target="_blank"
+                >Github</a
+              >
+            </li>
+            <li>
+              <a
+                class="footer-link"
+                href="https://getbootstrap.com/"
+                target="_blank"
+                >Bootstrap</a
+              >
+            </li>
+            <li>
+              <a
+                class="footer-link"
+                href="https://stackoverflow.com/"
+                target="_blank"
+                >Stack Overflow</a
+              >
             </li>
           </ul>
         </div>

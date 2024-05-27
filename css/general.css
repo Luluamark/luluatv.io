@@ -98,7 +98,6 @@ body {
   display: inline-block;
   padding: 1rem 2.8rem;
   background: #04aa6d;
-  border-radius: 5px;
 
   font-size: 1.6rem;
   letter-spacing: 0.1rem;
@@ -132,4 +131,38 @@ body {
 
 .btn:hover::before {
   width: 100%;
+}
+
+.heading-primary,
+.heading-secondary {
+  font-weight: 700;
+  line-height: 1.05;
+  color: #151515;
+  letter-spacing: -0.5px;
+}
+
+.heading-primary {
+  font-size: 5.2rem;
+  font-weight: 700;
+
+  margin-bottom: 3.2rem;
+}
+.heading-secondary {
+  font-size: 4.4rem;
+  line-height: 1.2;
+  margin-bottom: 9.6rem;
+}
+.sub-heading {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #d60000;
+  text-transform: uppercase;
+
+  letter-spacing: 0.75px;
+}
+.heading-tertiary {
+  font-size: 3rem;
+  line-height: 1.2;
+  margin-bottom: 3.2rem;
 }
