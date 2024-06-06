@@ -34,6 +34,21 @@
     padding-right: 4rem;
   }
 }
+/* Below 944px ///////////////////// */
+@media (max-width: 64em) {
+  .footer-section {
+    height: 80vh;
+  }
+  .footer-header {
+    top: -5%;
+  }
+  .contact-banner {
+    width: 90%;
+  }
+  .card {
+    height: 60rem;
+  }
+}
 
 /* Below 944px ///////////////////// */
 @media (max-width: 59em) {
@@ -55,7 +70,7 @@
   /* Mobile Nave */
   .btn-mobile-nav {
     display: block;
-    z-index: 1100;
+    z-index: 4;
   }
   .nav {
     background-color: rgba(4, 170, 109, 0.97);
@@ -65,7 +80,7 @@
     left: 0;
     width: 100%;
     height: 100vh;
-    z-index: 1000;
+
     transform: translateX(100%);
 
     display: flex;
@@ -87,10 +102,12 @@
     pointer-events: auto;
     visibility: visible;
     transform: translateX(0);
+    z-index: 1;
   }
 
   .nav-open .icon-mobile-nav[name="close-outline"] {
     display: block;
+    color: #fefefe;
   }
   .nav-open .icon-mobile-nav[name="menu-outline"] {
     display: none;
@@ -98,11 +115,213 @@
   .nav-list {
     flex-direction: column;
     gap: 4.8rem;
+    color: #fefefe;
   }
 
   .nav-link:link,
   .nav-link:visited {
+    font-size: 4.8rem;
+    color: #fefefe;
+    padding: 2.4rem;
+  }
+}
+
+/* Below 820px ipad air //////*/
+@media (max-width: 51.25em) {
+  .nav-list {
+    font-size: 4rem;
+    gap: 6rem;
+  }
+  .overlay-text h1 {
+    margin-bottom: 4rem;
+  }
+  .overlay-text p {
+    margin-bottom: 4rem;
+  }
+  .blog-center {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .card {
+    height: 50rem;
+  }
+  .slide-in-content {
+    grid-template-columns: 1fr;
+  }
+  .main-img img {
+    width: 90rem;
+  }
+  .youtube-gallery .grid-2-cols {
+    grid-template-columns: 1fr;
+  }
+
+  .two,
+  .three,
+  .four,
+  .five,
+  .six,
+  .seven {
+    width: 100%;
+    height: auto;
+  }
+  .youtube-img img {
+    width: 90rem;
+    margin: 0 auto;
+  }
+  .contacts-1 {
+    left: 3%;
+  }
+  .contacts-2 {
+    right: 3%;
+  }
+  .contact-banner {
+    width: 90%;
+  }
+  .contact-title p {
+    font-size: 2.2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  .footer-section {
+    height: 80vh;
+  }
+  .footer-header {
+    top: -5%;
+  }
+  .social-col {
+    margin-right: 3rem;
+  }
+  .resource-col {
+    margin-left: 4rem;
+  }
+  .f-logo-img {
+    gap: 2rem;
+  }
+  .footer-logo-img {
+    margin-right: 2rem;
+  }
+  .skill .grid-2-cols {
+    grid-template-columns: 1fr;
+  }
+  .skill img {
+    width: 90rem;
+    margin: 0;
+  }
+}
+/* Below 768px mini ipad //////*/
+@media (max-width: 48em) {
+  .video {
+    height: 100vh;
+  }
+  .overlay-text {
+    width: 80%;
+  }
+  .overlay-text h1 {
+    font-size: 10rem;
+
+    margin-bottom: 4.8rem;
+  }
+  .overlay-text p {
+    margin-bottom: 4rem;
+  }
+  .video-banner {
+    width: 80%;
+    height: 60rem;
+  }
+  .video-text {
+    width: 100%;
+
+    font-size: 2.2rem;
+    margin: 0 auto;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+  .card {
+    height: 50rem;
+  }
+  .blog-center {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .slide-in-content {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .main-img img {
+    width: 80rem;
+  }
+  .skill .grid-2-cols {
+    grid-template-columns: 1fr;
+  }
+  .skill img {
+    width: 80rem;
+    margin: 0 auto;
+  }
+  .youtube-gallery .grid-2-cols {
+    grid-template-columns: 1fr;
+  }
+  .two,
+  .three,
+  .four,
+  .five,
+  .six,
+  .seven {
+    width: 100%;
+  }
+  .youtube-img img {
+    width: 86rem;
+  }
+  .social-img img {
+    width: 200rem;
+  }
+  .social-text p {
+    font-size: 1.9rem;
+  }
+  .social-text h2 {
     font-size: 3rem;
+    margin-bottom: 4rem;
+    color: #ffdd00;
+  }
+  .contacts-1 {
+    left: 2%;
+  }
+  .contacts-2 {
+    right: 2%;
+  }
+  .contact-banner {
+    width: 85%;
+    height: 35rem;
+  }
+  .contact-title p {
+    font-size: 2.5rem;
+    padding: 2rem;
+    line-height: 1.3;
+  }
+  .section-cta {
+    height: 60vh;
+  }
+  .resources {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .social-media {
+    grid-template-columns: 1fr 1fr;
+    margin-right: 4rem;
+  }
+  .resource-col {
+    margin-left: 4rem;
+  }
+  .f-logo-img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    padding-right: 2.8rem;
+  }
+  .copyright p {
+    font-size: 1.6rem;
+  }
+  .section-cta {
+    height: 100vh;
   }
 }
 /* Below 700px ////////////// */
@@ -196,6 +415,9 @@
   }
   .main-img img {
     width: 68rem;
+  }
+  .section-cta {
+    height: 100vh;
   }
 }
 /* BELOW 544px (phones) ///////////////*/
@@ -339,7 +561,286 @@
   .contact-title p {
     font-size: 1.8rem;
   }
+  .section-cta {
+    height: 100vh;
+  }
 }
+/* BELOW 430px (phones) //////////////// */
+@media (max-width: 26.88em) {
+  .sub-header-container {
+    gap: 0.95rem;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .dropbtn {
+    font-size: 1.2rem;
+
+    padding: 1rem 3rem;
+  }
+
+  .dropdown-content {
+    min-width: 9rem;
+  }
+
+  .dropdown-content a {
+    padding: 1.2rem 1.98rem;
+
+    text-align: center;
+  }
+  .sub-icon {
+    width: 1.8rem;
+    height: 1.8rem;
+  }
+  .overlay-text {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+
+  .overlay-text h1 {
+    font-size: 8rem;
+    font-weight: 700;
+    margin-bottom: 6rem;
+  }
+  .overlay-text p {
+    line-height: 1.1;
+    font-size: 3rem;
+  }
+  .video-container {
+    height: 100vh;
+  }
+
+  .video-text {
+    max-width: 40rem;
+
+    margin-bottom: 2.4rem;
+    font-size: 1.6rem;
+    line-height: 1.1;
+  }
+  .video-banner {
+    margin-left: 4rem;
+    margin-right: 4rem;
+  }
+  .card {
+    height: 40vh;
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 6rem;
+  }
+  .main {
+    margin: 0 auto;
+  }
+  .main p {
+    max-width: 70%;
+  }
+  .main-text {
+    margin-left: 4rem;
+  }
+  .skill {
+    margin: 0 auto;
+    margin-bottom: 6rem;
+  }
+  .skill h2 {
+    font-size: 4rem;
+  }
+  .youtube-gal-two {
+    grid-template-columns: 1fr;
+    padding-left: 0;
+  }
+  .two,
+  .three,
+  .four,
+  .five,
+  .six,
+  .seven {
+    width: 100%;
+    height: auto;
+  }
+  .youtube-gallery img {
+    width: 40rem;
+  }
+  .contacts-text h3 {
+    font-size: 1.2rem;
+  }
+  .contact-title .cta-text {
+    font-size: 1.6rem;
+  }
+
+  .contacts-1 {
+    width: 18rem;
+    height: 20rem;
+    left: 3%;
+  }
+  .contacts-2 {
+    width: 18rem;
+    height: 20rem;
+    right: 3%;
+  }
+
+  .contact-banner {
+    width: 90%;
+    height: 28rem;
+  }
+  .footer-header {
+    width: 60%;
+  }
+
+  .footer-header {
+    left: 22%;
+    top: -10%;
+  }
+  .footer-list {
+    margin-left: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  .resources {
+    grid-template-columns: 1fr 1fr;
+  }
+  .social-media {
+    grid-template-columns: 1fr;
+  }
+  .f-logo-img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    padding-right: 2.8rem;
+  }
+
+  .sub-header-container {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  .sub-header {
+    height: 9.8rem;
+  }
+  .footer-list {
+    padding-right: 6.2rem;
+  }
+  .resources {
+    padding-left: 3rem;
+  }
+  .section-cta {
+    height: 100vh;
+  }
+}
+/* BELOW 414px (phones) //////////////// */
+@media (max-width: 25.88em) {
+  .sub-header-container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .video {
+    height: 100vh;
+  }
+  .overlay-text h1 {
+    font-size: 8.6rem;
+    margin-bottom: 3rem;
+  }
+  .video-banner {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+  .card {
+    height: 40rem;
+  }
+  .card-info h4 {
+    margin-top: 2rem;
+  }
+  .main {
+    margin: 0 auto;
+  }
+  .youtube-gallery {
+    margin: 0 auto;
+  }
+  .youtube-gal-two {
+    grid-template-columns: 1fr;
+    padding-left: 0;
+  }
+  .youtube-gallery img {
+    width: 45rem;
+  }
+  .two,
+  .three,
+  .four,
+  .five,
+  .six,
+  .seven {
+    width: 100%;
+    height: auto;
+  }
+  .contacts-text h3 {
+    font-size: 1.2rem;
+  }
+  .contact-title .cta-text {
+    font-size: 1.6rem;
+  }
+
+  .contacts-1 {
+    width: 20rem;
+    height: 20rem;
+    left: 3%;
+  }
+  .contacts-2 {
+    width: 20rem;
+    height: 20rem;
+    right: 3%;
+  }
+
+  .contact-banner {
+    width: 88%;
+    height: 28rem;
+  }
+  .footer-header {
+    width: 60%;
+  }
+
+  .copyright {
+    background-color: #fefefe;
+    height: 6rem;
+    align-items: center;
+  }
+  .resources {
+    grid-template-columns: 1fr 1fr;
+  }
+  .social-media {
+    grid-template-columns: 1fr;
+  }
+  .f-logo-img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    padding-right: 2.8rem;
+  }
+  .sub-header-container {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  .sub-header {
+    height: 9.8rem;
+  }
+  .footer-list {
+    padding-right: 6.2rem;
+  }
+  .resources {
+    padding-left: 3rem;
+  }
+  .footer-header {
+    left: 22%;
+    top: -10%;
+  }
+  .footer-list {
+    margin: 0 auto;
+  }
+  .section-cta {
+    padding-top: 9rem;
+  }
+}
+
 /* BELOW 375px (phones) ///////////////*/
 @media (max-width: 23.44em) {
   .sub-header-container {
@@ -433,5 +934,80 @@
   }
   .youtube-gallery img {
     width: 40rem;
+  }
+  .contacts-text h3 {
+    font-size: 1.2rem;
+  }
+  .contact-title .cta-text {
+    font-size: 1.6rem;
+  }
+
+  .contacts-1 {
+    width: 18rem;
+    height: 20rem;
+    left: 3%;
+  }
+  .contacts-2 {
+    width: 18rem;
+    height: 20rem;
+    right: 3%;
+  }
+
+  .contact-banner {
+    width: 90%;
+    height: 28rem;
+  }
+  .footer-header {
+    width: 60%;
+    left: 22%;
+    top: -10%;
+  }
+
+  .resources {
+    grid-template-columns: 1fr 1fr;
+  }
+  .social-media {
+    grid-template-columns: 1fr;
+  }
+  .f-logo-img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+  }
+
+  .sub-header-container {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  .sub-header {
+    height: 9.8rem;
+  }
+
+  .section-cta {
+    height: 100vh;
+  }
+  .f-logo-img {
+    margin-left: 3rem;
+    padding-left: 3rem;
+  }
+  .social-col {
+    margin-right: 2rem;
+  }
+  .resources {
+    margin-left: 0;
+    padding-left: 0;
+    padding-right: 4rem;
+  }
+  .footer-list {
+    padding-left: 1rem;
+    padding-right: 2rem;
+  }
+  .resource-col {
+    margin-left: -2rem;
+  }
+  .overlay-text h1 {
+    font-size: 5.8rem;
   }
 }

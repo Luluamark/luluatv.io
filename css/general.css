@@ -166,3 +166,12 @@ body {
   line-height: 1.2;
   margin-bottom: 3.2rem;
 }
+a:link {
+  text-decoration: none;
+}
+.hero-btn button a {
+  color: #fff;
+}
+.main-btn button a {
+  color: #fff;
+}
